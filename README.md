@@ -144,7 +144,7 @@ The secondary metric is:
 invalid test rate = invalid generated tests / total benchmark problems
 ```
 
-Invalid tests include syntax errors, import errors, name errors, or pytest collection errors.
+Invalid tests include: syntax errors, import errors, name errors, or pytest collection errors.
 
 ## Current Result
 
