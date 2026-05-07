@@ -1,0 +1,154 @@
+[
+  {
+    "id": "p001",
+    "name": "reverse_words",
+    "problem_file": "benchmarks/problems/p001_reverse_words.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p001_reverse_words.py",
+    "bug_type": "whitespace_handling",
+    "difficulty": "easy"
+  },
+  {
+    "id": "p002",
+    "name": "merge_intervals",
+    "problem_file": "benchmarks/problems/p002_merge_intervals.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p002_merge_intervals.py",
+    "bug_type": "boundary_condition",
+    "difficulty": "easy"
+  },
+  {
+    "id": "p003",
+    "name": "is_palindrome",
+    "problem_file": "benchmarks/problems/p003_is_palindrome.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p003_is_palindrome.py",
+    "bug_type": "normalization",
+    "difficulty": "easy"
+  },
+  {
+    "id": "p004",
+    "name": "find_max",
+    "problem_file": "benchmarks/problems/p004_find_max.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p004_find_max.py",
+    "bug_type": "negative_numbers",
+    "difficulty": "easy"
+  },
+  {
+    "id": "p005",
+    "name": "normalize_email",
+    "problem_file": "benchmarks/problems/p005_normalize_email.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p005_normalize_email.py",
+    "bug_type": "case_sensitivity",
+    "difficulty": "easy"
+  },
+  {
+    "id": "p006",
+    "name": "count_vowels",
+    "problem_file": "benchmarks/problems/p006_count_vowels.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p006_count_vowels.py",
+    "bug_type": "case_sensitivity",
+    "difficulty": "easy"
+  },
+  {
+    "id": "p007",
+    "name": "safe_divide",
+    "problem_file": "benchmarks/problems/p007_safe_divide.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p007_safe_divide.py",
+    "bug_type": "exception_handling",
+    "difficulty": "easy"
+  },
+  {
+    "id": "p008",
+    "name": "unique_sorted",
+    "problem_file": "benchmarks/problems/p008_unique_sorted.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p008_unique_sorted.py",
+    "bug_type": "duplicate_handling",
+    "difficulty": "easy"
+  },
+  {
+    "id": "p009",
+    "name": "get_middle",
+    "problem_file": "benchmarks/problems/p009_get_middle.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p009_get_middle.py",
+    "bug_type": "off_by_one",
+    "difficulty": "easy"
+  },
+  {
+    "id": "p010",
+    "name": "parse_price",
+    "problem_file": "benchmarks/problems/p010_parse_price.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p010_parse_price.py",
+    "bug_type": "string_parsing",
+    "difficulty": "easy"
+  },
+  {
+    "id": "p011",
+    "name": "clamp",
+    "problem_file": "benchmarks/problems/p011_clamp.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p011_clamp.py",
+    "bug_type": "boundary_condition",
+    "difficulty": "easy"
+  },
+  {
+    "id": "p012",
+    "name": "remove_none",
+    "problem_file": "benchmarks/problems/p012_remove_none.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p012_remove_none.py",
+    "bug_type": "mutation_side_effect",
+    "difficulty": "medium"
+  },
+  {
+    "id": "p013",
+    "name": "word_count",
+    "problem_file": "benchmarks/problems/p013_word_count.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p013_word_count.py",
+    "bug_type": "punctuation_handling",
+    "difficulty": "medium"
+  },
+  {
+    "id": "p014",
+    "name": "is_anagram",
+    "problem_file": "benchmarks/problems/p014_is_anagram.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p014_is_anagram.py",
+    "bug_type": "normalization",
+    "difficulty": "medium"
+  },
+  {
+    "id": "p015",
+    "name": "average",
+    "problem_file": "benchmarks/problems/p015_average.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p015_average.py",
+    "bug_type": "empty_input",
+    "difficulty": "easy"
+  },
+  {
+    "id": "p016",
+    "name": "lower_bound",
+    "problem_file": "benchmarks/problems/p016_lower_bound.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p016_lower_bound.py",
+    "bug_type": "binary_search_boundary",
+    "difficulty": "medium"
+  },
+  {
+    "id": "p017",
+    "name": "top_k_stable",
+    "problem_file": "benchmarks/problems/p017_top_k_stable.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p017_top_k_stable.py",
+    "bug_type": "stable_sorting",
+    "difficulty": "medium"
+  },
+  {
+    "id": "p018",
+    "name": "rolling_average",
+    "problem_file": "benchmarks/problems/p018_rolling_average.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p018_rolling_average.py",
+    "bug_type": "window_boundary",
+    "difficulty": "medium"
+  },
+  {
+    "id": "p019",
+    "name": "normalize_path",
+    "problem_file": "benchmarks/problems/p019_normalize_path.py",
+    "hidden_test_file": "benchmarks/hidden_tests/test_p019_normalize_path.py",
+    "bug_type": "stack_underflow_boundary",
+    "difficulty": "medium"
+  }
+]

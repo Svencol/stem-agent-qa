@@ -1,0 +1,162 @@
+{
+  "agent_name": "dynamic_pipeline_agent",
+  "total_problems": 19,
+  "bugs_found": 18,
+  "invalid_test_count": 0,
+  "bug_detection_rate": 0.9473684210526315,
+  "invalid_test_rate": 0.0,
+  "results": [
+    {
+      "problem_id": "p001",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p001_reverse_words.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "F                                                                        [100%]\n================================== FAILURES ===================================\n_____________________________ test_reverse_words ______________________________\n\n    def test_reverse_words():\n        # Test with normal input\n        assert reverse_words(\"hello world\") == \"world hello\"\n    \n        # Test with leading and trailing spaces\n>       assert reverse_words(\"  hello   world  \") == \"world hello\"\nE       AssertionError: assert '  world   hello  ' == 'world hello'\nE         \nE         - world hello\nE         +   world   hello  \nE         ? ++      ++     ++\n\nruns\\pipeline_demo\\generated_tests\\test_p001_reverse_words.py:9: AssertionError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p001_reverse_words.py::test_reverse_words\n1 failed in 0.06s\n\n"
+    },
+    {
+      "problem_id": "p002",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p002_merge_intervals.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "F                                                                        [100%]\n================================== FAILURES ===================================\n____________________________ test_merge_intervals _____________________________\n\n    def test_merge_intervals():\n        # Test case with overlapping intervals\n        assert merge_intervals([(1, 3), (2, 4), (5, 7), (6, 8)]) == [(1, 4), (5, 8)]\n    \n        # Test case with adjacent intervals\n>       assert merge_intervals([(1, 3), (3, 5)]) == [(1, 5)]\nE       assert [(1, 3), (3, 5)] == [(1, 5)]\nE         \nE         At index 0 diff: (1, 3) != (1, 5)\nE         Left contains one more item: (3, 5)\nE         Use -v to get more diff\n\nruns\\pipeline_demo\\generated_tests\\test_p002_merge_intervals.py:9: AssertionError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p002_merge_intervals.py::test_merge_intervals\n1 failed in 0.07s\n\n"
+    },
+    {
+      "problem_id": "p003",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p003_is_palindrome.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "F                                                                        [100%]\n================================== FAILURES ===================================\n_____________________________ test_is_palindrome ______________________________\n\n    def test_is_palindrome():\n        # Test typical palindromes\n>       assert is_palindrome(\"A man, a plan, a canal: Panama\") == True\nE       AssertionError: assert False == True\nE        +  where False = is_palindrome('A man, a plan, a canal: Panama')\n\nruns\\pipeline_demo\\generated_tests\\test_p003_is_palindrome.py:6: AssertionError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p003_is_palindrome.py::test_is_palindrome\n1 failed in 0.05s\n\n"
+    },
+    {
+      "problem_id": "p004",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p004_find_max.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "F                                                                        [100%]\n================================== FAILURES ===================================\n________________________________ test_find_max ________________________________\n\n    def test_find_max():\n        # Test with positive integers\n        assert find_max([1, 5, 2]) == 5\n    \n        # Test with negative integers\n>       assert find_max([-10, -3, -7]) == -3\nE       assert 0 == -3\nE        +  where 0 = find_max([-10, -3, -7])\n\nruns\\pipeline_demo\\generated_tests\\test_p004_find_max.py:9: AssertionError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p004_find_max.py::test_find_max\n1 failed in 0.05s\n\n"
+    },
+    {
+      "problem_id": "p005",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p005_normalize_email.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "F                                                                        [100%]\n================================== FAILURES ===================================\n____________________________ test_normalize_email _____________________________\n\n    def test_normalize_email():\n        # Test cases to validate the functionality of normalize_email\n>       assert normalize_email(\"User.Name@EXAMPLE.COM\") == \"User.Name@example.com\"\nE       AssertionError: assert 'user.name@example.com' == 'User.Name@example.com'\nE         \nE         - User.Name@example.com\nE         ? ^    ^\nE         + user.name@example.com\nE         ? ^    ^\n\nruns\\pipeline_demo\\generated_tests\\test_p005_normalize_email.py:6: AssertionError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p005_normalize_email.py::test_normalize_email\n1 failed in 0.05s\n\n"
+    },
+    {
+      "problem_id": "p006",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p006_count_vowels.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "F                                                                        [100%]\n================================== FAILURES ===================================\n______________________________ test_count_vowels ______________________________\n\n    def test_count_vowels():\n        # Test with mixed case\n        assert count_vowels(\"Hello\") == 2\n>       assert count_vowels(\"AEIOU\") == 5\nE       AssertionError: assert 0 == 5\nE        +  where 0 = count_vowels('AEIOU')\n\nruns\\pipeline_demo\\generated_tests\\test_p006_count_vowels.py:7: AssertionError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p006_count_vowels.py::test_count_vowels\n1 failed in 0.05s\n\n"
+    },
+    {
+      "problem_id": "p007",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p007_safe_divide.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "rt safe_divide(-10, 2) == -5.0\n        assert safe_divide(10, -2) == -5.0\n        assert safe_divide(-10, -2) == 5.0\n    \n        # Test division by zero\n>       assert safe_divide(10, 0) is None\n               ^^^^^^^^^^^^^^^^^^\n\nruns\\pipeline_demo\\generated_tests\\test_p007_safe_divide.py:13: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\na = 10, b = 0\n\n    def safe_divide(a: float, b: float) -> float | None:\n        \"\"\"\n        Divide a by b.\n    \n        If b is zero, return None instead of raising an exception.\n    \n        Example:\n            safe_divide(10, 2) -> 5.0\n            safe_divide(10, 0) -> None\n        \"\"\"\n>       return a / b\n               ^^^^^\nE       ZeroDivisionError: division by zero\n\nbenchmarks\\problems\\p007_safe_divide.py:11: ZeroDivisionError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p007_safe_divide.py::test_safe_divide\n1 failed in 0.05s\n\n"
+    },
+    {
+      "problem_id": "p008",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p008_unique_sorted.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "F                                                                        [100%]\n================================== FAILURES ===================================\n_____________________________ test_unique_sorted ______________________________\n\n    def test_unique_sorted():\n        # Test with duplicates\n>       assert unique_sorted([3, 1, 3, 2]) == [1, 2, 3]\nE       assert [1, 2, 3, 3] == [1, 2, 3]\nE         \nE         Left contains one more item: 3\nE         Use -v to get more diff\n\nruns\\pipeline_demo\\generated_tests\\test_p008_unique_sorted.py:6: AssertionError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p008_unique_sorted.py::test_unique_sorted\n1 failed in 0.05s\n\n"
+    },
+    {
+      "problem_id": "p009",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p009_get_middle.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "F                                                                        [100%]\n================================== FAILURES ===================================\n_______________________________ test_get_middle _______________________________\n\n    def test_get_middle():\n        # Test with an odd-length list\n        assert get_middle([1, 2, 3]) == 2\n        assert get_middle([10, 20, 30, 40, 50]) == 30\n    \n        # Test with an even-length list\n>       assert get_middle([1, 2, 3, 4]) == 2\nE       assert 3 == 2\nE        +  where 3 = get_middle([1, 2, 3, 4])\n\nruns\\pipeline_demo\\generated_tests\\test_p009_get_middle.py:10: AssertionError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p009_get_middle.py::test_get_middle\n1 failed in 0.05s\n\n"
+    },
+    {
+      "problem_id": "p010",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p010_parse_price.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nprice = '$1,000'\n\n    def parse_price(price: str) -> float:\n        \"\"\"\n        Parse a price string into a float.\n    \n        The input may start with a dollar sign and may contain commas.\n    \n        Example:\n            parse_price(\"$1,234.50\") -> 1234.50\n            parse_price(\"99.99\") -> 99.99\n        \"\"\"\n>       return float(price.replace(\"$\", \"\"))\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       ValueError: could not convert string to float: '1,000'\n\nbenchmarks\\problems\\p010_parse_price.py:11: ValueError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p010_parse_price.py::test_parse_price_with_dollar_sign\nFAILED runs/pipeline_demo/generated_tests/test_p010_parse_price.py::test_parse_price_with_commas\nFAILED runs/pipeline_demo/generated_tests/test_p010_parse_price.py::test_parse_price_with_edge_cases\n3 failed, 3 passed in 0.06s\n\n"
+    },
+    {
+      "problem_id": "p011",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p011_clamp.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "F                                                                        [100%]\n================================== FAILURES ===================================\n_________________________________ test_clamp __________________________________\n\n    def test_clamp():\n        # Test cases where the value is within the range\n        assert clamp(5, 1, 10) == 5\n        assert clamp(0, 0, 10) == 0\n>       assert clamp(10, 1, 10) == 9  # upper bound case\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       assert 10 == 9\nE        +  where 10 = clamp(10, 1, 10)\n\nruns\\pipeline_demo\\generated_tests\\test_p011_clamp.py:8: AssertionError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p011_clamp.py::test_clamp - as...\n1 failed in 0.05s\n\n"
+    },
+    {
+      "problem_id": "p012",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p012_remove_none.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "F                                                                        [100%]\n================================== FAILURES ===================================\n______________________________ test_remove_none _______________________________\n\n    def test_remove_none():\n        # Test with a list containing None values\n        values = [1, None, 2]\n        result = remove_none(values)\n        assert result == [1, 2]  # Check that None values are removed\n>       assert values == [1, None, 2]  # Ensure original list is unchanged\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       assert [1, 2] == [1, None, 2]\nE         \nE         At index 1 diff: 2 != None\nE         Right contains one more item: 2\nE         Use -v to get more diff\n\nruns\\pipeline_demo\\generated_tests\\test_p012_remove_none.py:9: AssertionError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p012_remove_none.py::test_remove_none\n1 failed in 0.05s\n\n"
+    },
+    {
+      "problem_id": "p013",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p013_word_count.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "():\n>       assert word_count(\"Hello @world! #hello\") == {\"hello\": 2, \"world\": 1}\nE       AssertionError: assert {'#hello': 1,...1, 'hello': 1} == {'hello': 2, 'world': 1}\nE         \nE         Differing items:\nE         {'hello': 1} != {'hello': 2}\nE         Left contains 2 more items:\nE         {'#hello': 1, '@world!': 1}\nE         Right contains 1 more item:\nE         {'world': 1}\nE         Use -v to get more diff\n\nruns\\pipeline_demo\\generated_tests\\test_p013_word_count.py:26: AssertionError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p013_word_count.py::test_word_count_basic\nFAILED runs/pipeline_demo/generated_tests/test_p013_word_count.py::test_word_count_with_punctuation\nFAILED runs/pipeline_demo/generated_tests/test_p013_word_count.py::test_word_count_numbers_and_words\nFAILED runs/pipeline_demo/generated_tests/test_p013_word_count.py::test_word_count_special_characters\n4 failed, 4 passed in 0.09s\n\n"
+    },
+    {
+      "problem_id": "p014",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p014_is_anagram.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "F                                                                        [100%]\n================================== FAILURES ===================================\n_______________________________ test_is_anagram _______________________________\n\n    def test_is_anagram():\n        # Test cases where the strings are anagrams\n>       assert is_anagram(\"Dormitory\", \"Dirty room\") == True\nE       AssertionError: assert False == True\nE        +  where False = is_anagram('Dormitory', 'Dirty room')\n\nruns\\pipeline_demo\\generated_tests\\test_p014_is_anagram.py:6: AssertionError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p014_is_anagram.py::test_is_anagram\n1 failed in 0.05s\n\n"
+    },
+    {
+      "problem_id": "p015",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p015_average.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "_______________________ test_average_with_empty_list _________________________\n\n    def test_average_with_empty_list():\n>       assert average([]) is None\n               ^^^^^^^^^^^\n\nruns\\pipeline_demo\\generated_tests\\test_p015_average.py:11: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nvalues = []\n\n    def average(values: list[float]) -> float | None:\n        \"\"\"\n        Return the arithmetic mean of a list of numbers.\n    \n        If the list is empty, return None.\n    \n        Example:\n            average([1, 2, 3]) -> 2.0\n            average([]) -> None\n        \"\"\"\n>       return sum(values) / len(values)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\nE       ZeroDivisionError: division by zero\n\nbenchmarks\\problems\\p015_average.py:11: ZeroDivisionError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p015_average.py::test_average_with_empty_list\n1 failed, 2 passed in 0.06s\n\n"
+    },
+    {
+      "problem_id": "p016",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p016_lower_bound.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "F                                                                        [100%]\n================================== FAILURES ===================================\n______________________________ test_lower_bound _______________________________\n\n    def test_lower_bound():\n        # Test cases based on the provided examples\n        assert lower_bound([1, 3, 5, 7], 5) == 2\n        assert lower_bound([1, 3, 5, 7], 4) == 2\n>       assert lower_bound([1, 3, 5, 7], 8) == 4\nE       assert 3 == 4\nE        +  where 3 = lower_bound([1, 3, 5, 7], 8)\n\nruns\\pipeline_demo\\generated_tests\\test_p016_lower_bound.py:8: AssertionError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p016_lower_bound.py::test_lower_bound\n1 failed in 0.05s\n\n"
+    },
+    {
+      "problem_id": "p017",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p017_top_k_stable.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p018",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p018_rolling_average.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": "F                                                                        [100%]\n================================== FAILURES ===================================\n____________________________ test_rolling_average _____________________________\n\n    def test_rolling_average():\n        # Test with a standard case\n>       assert rolling_average([1, 2, 3, 4], 2) == [1.5, 2.5, 3.5]\nE       assert [1.5, 2.5] == [1.5, 2.5, 3.5]\nE         \nE         Right contains one more item: 3.5\nE         Use -v to get more diff\n\nruns\\pipeline_demo\\generated_tests\\test_p018_rolling_average.py:6: AssertionError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p018_rolling_average.py::test_rolling_average\n1 failed in 0.05s\n\n"
+    },
+    {
+      "problem_id": "p019",
+      "generated_test_file": "runs/pipeline_demo/generated_tests/test_p019_normalize_path.py",
+      "tests_ran": true,
+      "hidden_bug_found": true,
+      "invalid_tests": false,
+      "notes": ": str) -> str:\n        \"\"\"\n        Normalize a Unix-style file path.\n    \n        Rules:\n        - \".\" means current directory and should be removed.\n        - \"..\" means parent directory and should remove the previous component.\n        - Multiple slashes should be treated as one slash.\n        - The result should always start with \"/\".\n        - Going above root should stay at root.\n    \n        Example:\n            normalize_path(\"/a/./b//c/../\") -> \"/a/b\"\n            normalize_path(\"/../../a\") -> \"/a\"\n        \"\"\"\n        parts = []\n        for part in path.split(\"/\"):\n            if part == \".\" or part == \"\":\n                continue\n            if part == \"..\":\n>               parts.pop()\nE               IndexError: pop from empty list\n\nbenchmarks\\problems\\p019_normalize_path.py:21: IndexError\n=========================== short test summary info ===========================\nFAILED runs/pipeline_demo/generated_tests/test_p019_normalize_path.py::test_normalize_path\n1 failed in 0.06s\n\n"
+    }
+  ]
+}

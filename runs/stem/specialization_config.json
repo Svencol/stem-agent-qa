@@ -1,0 +1,19 @@
+{
+  "domain": "Python Quality Assurance",
+  "architecture": "Test Automation",
+  "tools": [
+    "pytest",
+    "Selenium",
+    "coverage.py"
+  ],
+  "skills": [
+    "read_docstring_specification",
+    "generate_edge_cases",
+    "check_side_effects",
+    "bug_detection",
+    "execute_tests"
+  ],
+  "stopping_metric": "test coverage percentage",
+  "max_iterations": 3,
+  "min_improvement": 0.1
+}

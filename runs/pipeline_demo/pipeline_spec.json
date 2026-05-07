@@ -1,0 +1,28 @@
+{
+  "domain": "Python Quality Assurance",
+  "stages": [
+    {
+      "name": "Extract Intended Behavior",
+      "stage_type": "prompt",
+      "instruction": "Analyze the provided Python source code or docstring and extract the intended behavior or functionality of the code.",
+      "code": null,
+      "runs_on": "input"
+    },
+    {
+      "name": "extract_python_context",
+      "stage_type": "tool",
+      "instruction": "Extract deterministic Python context before pytest generation.",
+      "code": "def run(input: str) -> str:\n    lines = input.splitlines()\n    def_lines = [line.strip() for line in lines if line.strip().startswith(\"def \")]\n    imports = [line.strip() for line in lines if line.strip().startswith((\"import \", \"from \"))]\n    summary = [\n        \"Deterministic extraction:\",\n        \"Function definitions: \" + repr(def_lines),\n        \"Imports: \" + repr(imports),\n        \"\",\n        \"Original input:\",\n        input,\n    ]\n    return \"\\n\".join(summary)\n",
+      "runs_on": "previous"
+    },
+    {
+      "name": "Generate Pytest Tests",
+      "stage_type": "prompt",
+      "instruction": "Based on the extracted intended behavior, generate a set of pytest tests that cover the functionality described.\n\nFinal output requirements:\n- Return only valid pytest code.\n- Do not include markdown.\n- Do not include explanations.\n- Import the target function from the module path provided in the input.\n- Write tests that can be executed directly by pytest.\n",
+      "code": null,
+      "runs_on": "previous"
+    }
+  ],
+  "stopping_metric": "test coverage and pass rate",
+  "min_improvement": 0.15
+}

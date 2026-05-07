@@ -1,0 +1,162 @@
+{
+  "agent_name": "baseline_qa_agent",
+  "total_problems": 19,
+  "bugs_found": 0,
+  "invalid_test_count": 0,
+  "bug_detection_rate": 0.0,
+  "invalid_test_rate": 0.0,
+  "results": [
+    {
+      "problem_id": "p001",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p001_reverse_words.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p002",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p002_merge_intervals.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p003",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p003_is_palindrome.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p004",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p004_find_max.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p005",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p005_normalize_email.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p006",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p006_count_vowels.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p007",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p007_safe_divide.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p008",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p008_unique_sorted.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p009",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p009_get_middle.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p010",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p010_parse_price.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p011",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p011_clamp.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p012",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p012_remove_none.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p013",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p013_word_count.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p014",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p014_is_anagram.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p015",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p015_average.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p016",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p016_lower_bound.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p017",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p017_top_k_stable.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p018",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p018_rolling_average.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    },
+    {
+      "problem_id": "p019",
+      "generated_test_file": "runs/revision_demo/baseline_generated_tests/test_p019_normalize_path.py",
+      "tests_ran": true,
+      "hidden_bug_found": false,
+      "invalid_tests": false,
+      "notes": ".                                                                        [100%]\n1 passed in 0.02s\n\n"
+    }
+  ]
+}

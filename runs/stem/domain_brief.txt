@@ -1,0 +1,11 @@
+**1. Typical approach:**  
+Practitioners in Python Quality Assurance (QA) typically break down the task into several key phases: requirement analysis, test planning, test case design, test execution, and defect reporting. They start by understanding the application requirements, then create a test strategy that outlines the scope and objectives. Test cases are designed based on requirements, followed by executing these tests and logging any defects found.
+
+**2. Standard tools and techniques:**  
+Common tools include pytest for unit testing, Selenium for automated web testing, and coverage.py for measuring code coverage. Techniques such as Test-Driven Development (TDD) and Behavior-Driven Development (BDD) are also widely used to ensure quality from the outset.
+
+**3. Common failure modes and what good output avoids:**  
+Common failure modes include inadequate test coverage, poorly defined test cases, and overlooking edge cases. Good output avoids these by ensuring comprehensive test coverage, clear documentation of test cases, and thorough validation of all application functionalities.
+
+**4. Recommended skills for an AI agent in this domain:**  
+An AI agent should possess skills in Python programming, familiarity with QA methodologies, proficiency in automation tools, and the ability to analyze code for potential defects. Additionally, understanding of software development life cycles and experience with CI/CD pipelines are beneficial.

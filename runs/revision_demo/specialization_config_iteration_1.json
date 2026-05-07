@@ -1,0 +1,19 @@
+{
+  "domain": "Python Quality Assurance",
+  "architecture": "Test Generation Agent",
+  "tools": [
+    "pytest",
+    "hypothesis",
+    "mypy"
+  ],
+  "skills": [
+    "read_docstring_specification",
+    "generate_edge_cases",
+    "check_side_effects",
+    "bug_detection",
+    "execute_tests"
+  ],
+  "stopping_metric": "test_coverage",
+  "max_iterations": 2,
+  "min_improvement": 1.01
+}
